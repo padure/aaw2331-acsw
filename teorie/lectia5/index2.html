@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+    <style>
+        .mb-1, fieldset{
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h4>Formulare</h4>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Date personale</legend>
+            <div class="mb-1">
+                <label for="nume_prenume">Nume prenume</label>
+                <input type="text" name="nume_prenume" id="nume_prenume" placeholder="Nume prenume">
+            </div>
+            <div class="mb-1">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Date de contact</legend>
+            <div class="mb-1">
+                <label><b>Localitate</b></label>
+                <div>
+                    <input type="radio" name="localitate" id="cahul" value="Cahul">
+                    <label for="cahul">Cahul</label>
+                </div>
+                <div>
+                    <input type="radio" name="localitate" id="rosu" value="Rosu">
+                    <label for="rosu">Rosu</label>
+                </div>
+                <div>
+                    <input type="radio" name="localitate" id="cantemir" value="Cantemir">
+                    <label for="cantemir">Cantemir</label>
+                </div>
+            </div>
+            <div class="mb-1">
+                <label><b>Genul</b></label>
+                <div>
+                    <input type="radio" name="genul" id="masculin" value="Masculin" checked>
+                    <label for="masculin">Masculin</label>
+                </div>
+                <div>
+                    <input type="radio" name="genul" id="femenin" value="Femenin">
+                    <label for="femenin">Femenin</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Hobby</legend>
+            <div class="mb-1">
+                <div>
+                    <input type="checkbox" name="hobby" id="lectura">
+                    <label for="lectura">Lectura</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hobby" id="sport">
+                    <label for="sport">Sport</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hobby" id="plimbari">
+                    <label for="plimbari">Plimbari</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hobby" id="programare">
+                    <label for="programare">Programare</label>
+                </div>
+            </div>
+            <div class="mb-1">
+                <label for="satisfactie">Nivelul de satisfactie a DVS?</label>
+                <input type="range" name="satisfactie" id="satisfactie" min="1" max="5" step="1">
+            </div>
+        </fieldset>
+        <button type="submit">Send</button>
+        <button type="reset">Cancel</button>
+    </form>
+</body>
+</html>

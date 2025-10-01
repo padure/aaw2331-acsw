@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    background-color: rgb(249, 212, 212);
+}
+nav{
+    background-color: brown;
+    color: white;
+    padding: 15px 5px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+footer{
+    background-color: brown;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    height: 25dvh;
+    font-size: 1.1rem;
+}

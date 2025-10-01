@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+</head>
+<body>
+    <h3>Formularele si elementele lui</h3>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="username">Nume si prenume</label>
+            <input type="text" name="username" id="username" placeholder="Nume si prenume">
+        </div>
+        <div>
+            <label for="descriere">Descriere</label>
+            <textarea name="descriere" id="descriere" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="localitate">Localitate</label>
+            <select name="localitate" id="localitate" multiple size="3">
+                <option value="Cahul">Cahul</option>
+                <option value="Rosu" disabled>Rosu</option>
+                <option value="Cotihana">Cotihana</option>
+                <option value="Crihana Veche" selected>Crihana Veche</option>
+            </select>
+        </div>
+        <div>
+            <label for="parola">Parola</label>
+            <input type="password" name="parola" id="parola">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+        <div>
+            <label for="varsta">Varsta</label>
+            <input type="number" name="varsta" id="varsta" min="1" max="120" step="0.01">
+        </div>
+        <div>
+            <label for="data">Data nasterii</label>
+            <input type="datetime-local" name="data" id="data">
+        </div>
+        <div>
+            <label for="color">Culoare preferata</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <label for="fisier">Fisier</label>
+            <input type="file" name="fisier" id="fisier" multiple>
+        </div>
+        <div>
+            <label for="telefon">Telefon</label>
+            <input type="tel" name="telefon" id="telefon">
+        </div>
+        <div>
+            <label for="id">Id</label>
+            <input type="hidden" name="id" value="2025">
+        </div>
+        <button type="submit">Transmite</button>
+        <!-- <input type="submit" value="Transmite"> -->
+    </form>
+</body>
+</html>
