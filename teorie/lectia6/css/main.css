@@ -11,10 +11,10 @@ p{
     word-spacing: 15px;
     background-color: rgba(200, 100, 10, 0.28);
     width: 80%;
-    height: 120px;
+    height: 50vh;
     margin: 20px auto;
     border: 1px double white;
-    outline: 1px dotted brown;
+    outline: 1px dotted white;
 }
 .text{
     font-style: italic;
@@ -30,6 +30,6 @@ body{
     background-image: url("../imagini/img1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
-    background-attachment: scroll;
+    background-position: top;
+    background-attachment: fixed;
 }
