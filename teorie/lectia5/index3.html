@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+    <style>
+        .mb-1{
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h3>Formulare</h3>
+    <form action="#" method="post">
+        <fieldset class="mb-1">
+            <legend>Date de contact</legend>
+            <div class="mb-1">
+                <label><b>Indica localitatea:</b></label>
+                <div>
+                    <input type="radio" name="localitatea" id="cahul" value="Cahul">
+                    <label for="cahul">Cahul</label>
+                </div>
+                <div>
+                    <input type="radio" name="localitatea" id="rosu" value="Rosu">
+                    <label for="rosu">Rosu</label>
+                </div>
+                <div>
+                    <input type="radio" name="localitatea" id="cantemir" value="Cantemir">
+                    <label for="cantemir">Cantemir</label>
+                </div>
+            </div>
+            <div class="mb-1">
+                <label><b>Genul:</b></label>
+                <div>
+                    <input type="radio" name="genul" id="masculin" value="Masculin" checked>
+                    <label for="masculin">Masculin</label>
+                </div>
+                <div>
+                    <input type="radio" name="genul" id="femenin" value="Femenin">
+                    <label for="femenin">Femenin</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="mb-1">
+            <legend>Ocupatie</legend>
+            <div class="mb-1">
+                <label><b>Hobby</b></label>
+                <div>
+                    <input type="checkbox" name="hobby" id="lectura" value="Lectura">
+                    <label for="lectura">Lectura</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hobby" id="sport" value="Sport">
+                    <label for="sport">Sport</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hobby" id="programare" value="Programare">
+                    <label for="programare">Programare</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hobby" id="jocuri_video" value="Jocuri Video">
+                    <label for="jocuri_video">Jocuri Video</label>
+                </div>
+            </div>
+        </fieldset>
+        <div class="mb-1">
+            <label for="apreciere">Apreciaza nivelul de implicare in activitate.</label>
+            <input type="range" name="apreciere" id="apreciere" min="1" max="10" step="2">
+        </div>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

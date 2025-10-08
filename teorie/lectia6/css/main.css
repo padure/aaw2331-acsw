@@ -1,0 +1,35 @@
+#red{
+    color:red;
+}
+p{
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 0px 3px 3px rgba(200, 100, 10, 0.5);
+    line-height: 3;
+    text-indent: 55px;
+    letter-spacing: 8px;
+    word-spacing: 15px;
+    background-color: rgba(200, 100, 10, 0.28);
+    width: 80%;
+    height: 120px;
+    margin: 20px auto;
+    border: 1px double white;
+    outline: 1px dotted brown;
+}
+.text{
+    font-style: italic;
+    font-weight: bolder;
+    text-indent: 0;
+}
+#blue{
+    text-transform: capitalize;
+    text-decoration: overline;
+    text-align: center;
+}
+body{
+    background-image: url("../imagini/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: scroll;
+}
