@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        nav.navbar{
+            background-color: #0f172a;
+            width: 15vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        nav.navbar a{
+            color: #dce0ea;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #dce0ea;
+            padding: 10px 10px 10px 32px;
+            transition: all 0.2s ease-in-out;
+        }
+        nav.navbar a:focus,
+        nav.navbar a:hover{
+            background-color: #182441;
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">Acasa</a>
+        <a href="#">Galerie</a>
+        <a href="#">Noutati</a>
+        <a href="#">Servicii</a>
+        <a href="#">Contacte</a>
+    </nav>
+</body>
+</html>
