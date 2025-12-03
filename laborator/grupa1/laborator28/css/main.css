@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+
+.card {
+    width: clamp(40vw, 60vw, 80vw);
+    padding: clamp(1rem, 6vw, 1.8rem);
+    border-radius: clamp(1rem, 6vw, 1.8rem);
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.4);
+}
+
+.card .title{
+    text-align: center;
+    font-size: clamp(0.6rem, 3vw, 1.4rem);
+    padding: clamp(0.4rem, 4vw, 1.4rem);
+}
+.card .description{
+    text-align: justify;
+    padding: clamp(0.2rem, 4vw, 0.4rem) 0;
+}
+
+.card img{
+    width: 100%;
+}
+
+/* Tablet */
+@media screen and (min-width: 992px) {}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {}

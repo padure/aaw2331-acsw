@@ -1,0 +1,9 @@
+.card{
+    height: 25px;
+    margin-bottom: 25px;
+    background-color: green;
+}
+
+.container ~ .card{
+    background-color: red;
+}

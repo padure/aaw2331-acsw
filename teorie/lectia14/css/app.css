@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobil */
+.navbar {
+    display: flex;
+    position: relative;
+    box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.75);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 120px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.navbar .links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+.navbar .links a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+/* Tablet */
+@media screen and (min-width: 576px) {
+    .navbar .bars {
+        display: none;
+    }
+
+    .navbar .links {
+        position: initial;
+        box-shadow: none;
+        background: transparent;
+        transform: none;
+        flex-direction: row;
+        justify-content: end;
+        gap: 15px;
+        width: auto;
+    }
+
+    .navbar {
+        position: initial;
+        justify-content: center;
+        gap: 4rem;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+    .navbar {
+        position: initial;
+        justify-content: space-around;
+    }
+}
+
+/* Desktop XL */
+@media screen and (min-width: 1200px) {
+    .navbar .links a::before {
+        content: "▶ ";
+        font-size: 12px;
+    }
+}

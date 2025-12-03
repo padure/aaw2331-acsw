@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(
+        circle at center,
+        rgba(120, 80, 255, 0.35),
+        rgba(0, 150, 255, 0.10)
+    );
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% - 200px);
+    border-top-left-radius: 20% 10%;
+    border-top-right-radius: 50% 25%;
+    border-bottom-left-radius: 50% 25%;
+    border-bottom-right-radius: 10% 20%;
+    /* Animatii */
+    animation-name: radius;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes toRight {
+    0%{
+        left: 0;
+        bottom: calc(100% - 200px);
+    }
+    25%{
+        left: calc(100% - 200px);
+        bottom: calc(100% - 200px);
+    }
+    50%{
+        left: calc(100% - 200px);
+        bottom: 0;
+    }
+    75%{
+        left: 0;
+        bottom: 0;
+    }
+    100%{
+        left: 0;
+        bottom: calc(100% - 200px);
+    }
+}
+
+@keyframes radius {
+    0%{
+        background: radial-gradient(
+            circle at center,
+            rgba(120, 80, 255, 0.35),
+            rgba(0, 150, 255, 0.10)
+        );
+        border-top-left-radius: 20% 10%;
+        border-top-right-radius: 50% 25%;
+        border-bottom-left-radius: 50% 25%;
+        border-bottom-right-radius: 10% 20%;
+    }
+    33%{
+        border-top-left-radius: 50% 25%;
+        border-top-right-radius: 20% 10%;
+        border-bottom-left-radius: 10% 20%;
+        border-bottom-right-radius: 50% 25%;
+    }
+    66%{
+        border-top-left-radius: 40% 15%;
+        border-top-right-radius: 10% 20%;
+        border-bottom-left-radius: 60% 35%;
+        border-bottom-right-radius: 30% 20%;
+        background: radial-gradient(
+            circle at 30% 20%,
+            rgba(120, 80, 255, 0.35),
+            rgba(0, 150, 255, 0.10)
+        );
+    }
+    100%{
+        border-top-left-radius: 20% 10%;
+        border-top-right-radius: 50% 25%;
+        border-bottom-left-radius: 50% 25%;
+        border-bottom-right-radius: 10% 20%;
+        background: radial-gradient(
+            circle at center,
+            rgba(120, 80, 255, 0.35),
+            rgba(0, 150, 255, 0.10)
+        );
+    }
+}
+

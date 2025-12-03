@@ -1,0 +1,21 @@
+<svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cloudGradUnified" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="skyblue" stop-opacity="0.95"></stop>
+      <stop offset="100%" stop-color="skyblue" stop-opacity="0.75"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Nor mare, un singur path -->
+  <path d="
+      M110 190
+      C70 180, 70 130, 115 120
+      C90 70, 160 50, 190 95
+      C210 55, 280 55, 300 105
+      C340 90, 390 110, 380 150
+      C430 170, 400 220, 340 215
+      C300 260, 180 260, 140 215
+      C90 220, 70 210, 110 190
+      Z
+    " fill="url(#cloudGradUnified)" stroke="rgba(0,0,0,0.10)" stroke-width="3"></path>
+</svg>
